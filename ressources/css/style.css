@@ -178,3 +178,36 @@
   display: block;      
 }
 
+/* FOOTER LAYOUT */
+
+footer {
+  background-color: var(--fond-soir);
+  color: var(--couleur-primaire);
+  padding: 50px 20px 30px;
+}
+
+footer p {
+  font-family: var(--text-main-font);
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  font-size: 13px;
+  transition: color 0.3s;
+  color: var(--lien-regular);
+}
+
+.footer-links a:hover {
+  color: var(--lien-hover)
+}
+
+
