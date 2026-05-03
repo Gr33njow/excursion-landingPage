@@ -42,7 +42,7 @@
 
 .nav-logo {
   font-family: var(--titles-font);
-  font-size: 14px;
+  font-size: 24px;
   font-weight: 500;
 }
 
@@ -60,7 +60,7 @@
 }
 
 .nav-cta {
-  color: var(--couleur-primaire);
+  color: var(--lien-regular);
   padding: 10px 24px;
   border-radius: 30px;
   text-decoration: none;
@@ -68,6 +68,8 @@
   font-size: 14px;
   font-weight: 500;
   transition: background 0.3s;
+  border: none;
+  cursor: pointer;
 }
 
 /* MAIN SECTION */
@@ -94,7 +96,7 @@
 }
 
 .hero-content span {
-    color: var(--rose-cerisier);
+    color: var(--or);
 }
 
 .hero-content p {
@@ -186,10 +188,14 @@ footer {
   padding: 50px 20px 30px;
 }
 
-footer p {
+.footer-logo {
   font-family: var(--text-main-font);
   font-size: 24px;
   margin-bottom: 15px;
+}
+
+footer p:nth-of-type(2) {
+  font-size: 14px;
 }
 
 .footer-links {
