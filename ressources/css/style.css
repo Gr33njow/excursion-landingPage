@@ -23,7 +23,7 @@
 
 /* HEADER STYLE */
 
-.navbar {
+.nav-bar {
   position: fixed;
   width: 100%;
   background: var(--couleur-header);
@@ -46,11 +46,21 @@
   font-weight: 500;
 }
 
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-links li {
+  list-style-type: none;
+}
+
 .nav-links a {
   color: var(--couleur-primaire);
   text-decoration: none;
   font-family: var(--titles-font);
-  font-size: 14px;
+  font-size: 24px;
   font-weight: 500;
   transition: color 0.3s;
 }
@@ -60,7 +70,7 @@
 }
 
 .nav-cta {
-  color: var(--lien-regular);
+  color: var(--couleur-primaire);
   padding: 10px 24px;
   border-radius: 30px;
   text-decoration: none;
@@ -147,18 +157,23 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
+  gap: 15px;
 }
 
 #galerie h3 {
   font-family: var(--titles-font);
   padding: 20px 20px 0 20px;
   margin: 0;
+  text-align: center;
+  font-size: 1.5rem;
 }
 
 #galerie p {
   font-family: var(--text-main-font);
   padding: 10px 20px 20px 20px;;
   margin: 0;
+  text-align: center;
+  font-size: 1.8rem;
 }
 
 .galerie-card {
@@ -188,6 +203,13 @@ footer {
   padding: 50px 20px 30px;
 }
 
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
 .footer-logo {
   font-family: var(--text-main-font);
   font-size: 24px;
@@ -207,7 +229,7 @@ footer p:nth-of-type(2) {
 
 .footer-links a {
   text-decoration: none;
-  font-size: 13px;
+  font-size: 18px;
   transition: color 0.3s;
   color: var(--lien-regular);
 }
